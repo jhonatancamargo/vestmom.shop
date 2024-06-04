@@ -1,0 +1,863 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meia Calça-Peluciada</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+     <!-- pixel facebook-->
+<script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '385902050609326');
+    fbq('track', 'PageView');
+    fbq('track', 'pv-meia-calsa');
+    fbq('track', 'ViewContent');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=385902050609326&ev=PageView&noscript=1"
+    /></noscript>
+    <!-- fim do pixel facebook -->
+
+    <style>
+       body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            padding-left: 25px;
+            padding-right: 25px;
+        }
+
+        .navbar {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 20px 0;
+        }
+
+        .logo img {
+            width: 125px;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li {
+            padding: 0 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #555;
+        }
+
+        .menu-icon {
+            width: 30px;
+            cursor: pointer;
+            display: none;
+        }
+
+        .small-container {
+            max-width: 1080px;
+            margin: auto;
+            padding-left: 25px;
+            padding-right: 25px;
+        }
+
+        .single-product .row {
+            display: flex;
+            flex-wrap: wrap;
+            margin-top: 10px;
+        }
+
+        .single-product .row .col-2 {
+            flex-basis: 50%;
+        }
+
+        .single-product .row .col-2 img {
+            padding: 2px;
+            border: solid 1px #676161;
+            border-radius: 10px;
+        }
+
+        .small-img-row {
+            display: flex;
+            justify-content: space-between;
+            padding-top: 4px;
+        }
+
+        .small-img-col {
+            flex-basis: 24%;
+            cursor: pointer;
+        }
+
+        .btn {
+            display: inline-block;
+            background-color: #008a00;
+            color: #fff;
+            padding: 8px 30px;
+            margin: 30px 0;
+            border-radius: 6px;
+            transition: background 0.5s;
+            text-shadow: 1px 2px 2px rgb(0 0 0 / 70%);
+            box-shadow: 0 0 0 0 #008a004a;
+        }
+            @-webkit-keyframes pulse{0%{
+              -moz-transform:scale(1);
+              -ms-transform:scale(1);
+              -webkit-transform:scale(1);
+              transform:scale(1)}70%{-moz-transform:scale(1);
+              -ms-transform:scale(1);
+              -webkit-transform:scale(1);
+              transform:scale(1);
+              box-shadow:0 0 0 16px rgba(90,153,212,0);
+              }100%{-moz-transform:scale(1);
+              -ms-transform:scale(1);
+              -webkit-transform:scale(1);transform:scale(1);
+              box-shadow:0 0 0 0 rgba(90,153,212,0);}}
+    
+        .btn:hover {
+            background-color: #008a00;
+        }
+
+        .row-2 {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: 20px 0;
+            border-bottom: 1px solid #ccc;
+            padding-bottom: 10px;
+        }
+
+        .row-2 h2 {
+            font-size: 24px;
+            font-weight: 600;
+        }
+
+        .row-2 p {
+            color: #ff523b;
+        }
+
+        .col-4 {
+            flex-basis: 25%;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+
+        .col-4 img {
+            width: 100%;
+        }
+
+        .rating .fa {
+            color: #ff523b;
+        }
+
+        .footer {
+            background-color: #222;
+            color: #fff;
+            padding: 60px 0 20px;
+        }
+
+        .footer-col1, .footer-col2, .footer-col3, .footer-col4 {
+            flex-basis: 25%;
+            padding: 10px 20px;
+        }
+
+        .footer-col1 h3, .footer-col2 h3, .footer-col3 h3, .footer-col4 h3 {
+            font-size: 20px;
+            margin-bottom: 20px;
+        }
+
+        .footer-col1 p, .footer-col2 p {
+            font-size: 14px;
+            line-height: 24px;
+        }
+
+        .app-logo img {
+            margin: 10px 0;
+        }
+
+        .footer ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .footer ul li {
+            line-height: 24px;
+        }
+
+        .footer ul li a {
+            text-decoration: none;
+            color: #fff;
+            font-size: 14px;
+        }
+
+        .footer hr {
+            border: none;
+            background-color: #ccc;
+            height: 1px;
+            margin: 20px 0;
+        }
+
+        footer .copyright {
+            text-align: center;
+            font-size: 14px;
+            color: #8a8a8a;
+        }
+
+        /* Product Description Section CSS */
+        .product-description {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .card {
+            border: 1px solid #ddd;
+            border-radius: 6px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+
+        .card-header {
+            box-shadow: 0px 9px 25px -24px black;
+            padding: 9px;
+            border-bottom: inherit;
+            border-radius: 6px 6px 0 0;
+            background-color: #f9f9f9;
+        }
+
+        .card-title {
+            display: flex;
+            flex-direction: row-reverse;
+            align-items: center;
+            justify-content: flex-end;
+            font-size: 13px;
+            text-transform: uppercase;
+        }
+
+        .icon {
+            fill: #727272;
+        }
+
+        .card-section {
+            padding: 20px;
+        }
+
+        .rte {
+            text-align: left;
+        }
+
+        .center {
+            text-align: center;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 29.92px;
+            margin-block-end: 11.2px;
+        }
+
+        .image {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            max-width: 100%;
+            height: auto;
+            padding: 18px;
+        }
+
+        /* Customer Reviews Section CSS */
+        .customer-reviews {
+            background-color: #fff;
+            padding: 50px 0;
+        }
+
+        .customer-reviews .container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 0 15px;
+        }
+
+        .customer-reviews h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .section-divider {
+            border: 0;
+            height: 1px;
+            background: #ccc;
+            margin: 20px 0;
+        }
+
+        .rating-overview {
+            display: flex;
+            flex-wrap: nowrap;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 30px;
+            position: relative;
+        }
+
+        .rating-score, .rating-breakdown, .write-review {
+            padding: 10px 0;
+            position: relative;
+        }
+
+        .rating-score::after, .rating-breakdown::after {
+            content: '';
+            position: absolute;
+            right: 0;
+            top: 0;
+            height: 100%;
+            margin: 0 -50%;
+            width: 1px;
+            border-right: 1px dotted #ccc;
+        }
+
+        .rating-score {
+            text-align: center;
+            flex-basis: auto;
+            margin-bottom: 0;
+        }
+
+        .rating-score h1 {
+            font-size: 48px;
+            margin: 0;
+        }
+
+        .rating-score .stars {
+            color: #ffbf00;
+        }
+
+        .rating-score p {
+            margin: 5px 0 0;
+            color: #777;
+        }
+
+        .rating-breakdown {
+            flex-grow: 1;
+            margin: 0 20%;
+        }
+
+        .rating-bar {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+
+        .rating-bar span {
+            display: inline-block;
+            width: 30px;
+        }
+
+        .rating-bar .stars {
+            color: #ffbf00;
+            margin-right: 39px;
+            flex-shrink: 0;
+        }
+
+        .rating-bar .bar {
+            flex-grow: 1;
+            height: 8px;
+            background-color: #eee;
+            border-radius: 4px;
+            overflow: hidden;
+            margin-right: 10px;
+            position: relative;
+        }
+
+        .rating-bar .filled {
+            display: block;
+            height: 100%;
+            background-color: #ffbf00;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 1;
+        }
+
+        .write-review {
+            background-color: #000;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            flex-basis: auto;
+            text-align: center;
+        }
+
+        .write-review:hover {
+            background-color: #333;
+        }
+
+        .reviews {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .review-card {
+            background-color: #f9f9f9;
+            border: 1px solid #ddd;
+            border-radius: 6px;
+            padding: 20px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+            flex-basis: 100%;
+            max-width: 300px;
+        }
+
+        .review-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .review-card h3 {
+            margin: 0 0 10px;
+            font-size: 18px;
+        }
+
+        .review-card .verified {
+            color: #28a745;
+            font-size: 14px;
+        }
+
+        .review-card .stars {
+            color: #ffbf00;
+            margin-bottom: 10px;
+        }
+
+        .review-card p {
+            font-size: 14px;
+            color: #777;
+            margin: 0 0 10px;
+        }
+
+        .review-card img {
+            max-width: 100%;
+            border-radius: 4px;
+        }
+        .pulse{
+          -webkit-animation: pulse 1.5s infinite;
+        }
+
+        @media screen and (min-width: 600px) {
+            .review-card {
+                flex-basis: 48%;
+            }
+        }
+
+        @media screen and (min-width: 992px) {
+            .review-card {
+                flex-basis: 23%;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .rating-overview {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .rating-score, .rating-breakdown, .write-review {
+                margin-bottom: 20px;
+                width: 100%;
+                text-align: center;
+            }
+
+            .rating-score::after, .rating-breakdown::after {
+                border-right: none;
+                border-bottom: 1px dotted #ccc;
+                width: 100%;
+                height: 1px;
+                bottom: 0;
+                top: auto;
+                margin: auto;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="navbar">
+            <div class="logo">
+                <a href="index.html"><img src="images/v2.webp" width="125px" alt="Logo"></a>
+            </div>
+            <nav>
+                <ul id="MenuItems" style="max-height: 0px;">
+                    <li><a href="index.html">Início</a></li>
+                    <!--li><a href="products.html">Produtos</a></li-->
+                    <li><a href="">Sobre</a></li>
+                    <li><a href="">Contato</a></li>
+                    <li><a href="account.html">Conta</a></li>
+                </ul>
+            </nav>
+            <a href="cart.html"><img src="images/cart.png" width="30px" height="30px" alt="Cart"></a>
+            <img src="images/menu.png" class="menu-icon" alt="Menu Icon" onclick="menutoggle()">
+        </header>
+    </div>
+    
+    <main class="small-container single-product">
+        <div class="row">
+            <div class="col-2">
+                <img src="images/meia-calsa/6.webp" width="100%" id="ProductImg" alt="Product Image">
+                <div class="small-img-row">
+                    <div class="small-img-col">
+                        <img src="images/meia-calsa/6.webp" class="small-img" width="100%" alt="Gallery Image 1">
+                    </div>
+                    <div class="small-img-col">
+                        <img src="images/meia-calsa/7.webp" class="small-img" width="100%" alt="Gallery Image 1">
+                    </div>
+                    <div class="small-img-col">
+                        <img src="images/meia-calsa/8.webp" class="small-img" width="100%" alt="Gallery Image 2">
+                    </div>
+                    <div class="small-img-col">
+                        <img src="images/meia-calsa/4.png" class="small-img" width="100%" alt="Gallery Image 3">
+                    </div>
+                    <div class="small-img-col">
+                        <img src="images/meia-calsa/5.png" class="small-img" width="100%" alt="Gallery Image 4">
+                    </div>
+                </div>
+            </div>
+            <div class="col-2">
+                <p>Meia Calça</p>
+                <h1>Meia-Calça Peluciada</h1>
+                <h4>R$98,70</h4>
+                <select>
+                    <option>Select Size</option>
+                    <option selected>M</option>
+                </select>
+                <input type="number" value="1" id="quantity">
+                <button class="btn pulse" onclick="addToCart()">🛒 COMPRAR AGORA!</button>
+                <h3>Detalhes do Produto <i class="fa fa-indent"></i></h3>
+                <p>Perfeita para os dias mais frios, essa peça forrada com malha flanelada garante aquecimento extra e toque macio inigualável. A cor preta translúcida oferece um visual elegante e versátil, combinando com diversos looks. </p>
+            </div>
+        </div>
+    </main>
+
+    <!-- Product Description Section -->
+    <section class="product-description">
+        <div class="card">
+            <div class="card-header">
+                <h2 class="card-title heading h3">Descrição
+                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 30 30" class="icon">
+                        <path d="M24,4H6C4.895,4,4,4.895,4,6v18c0,1.105,0.895,2,2,2h18c1.105,0,2-0.895,2-2V6C26,4.895,25.105,4,24,4z M9,16c-0.552,0-1-0.448-1-1c0-0.552,0.448-1,1-1s1,0.448,1,1C10,15.552,9.552,16,9,16z M21,16h-8c-0.552,0-1-0.448-1-1c0-0.552,0.448-1,1-1h8c0.552,0,1,0.448,1,1C22,15.552,21.552,16,21,16z M9,10c-0.552,0-1-0.448-1-1c0-0.552,0.448-1,1-1s1,0.448,1,1C10,9.552,9.552,10,9,10z M21,10h-8c-0.552,0-1-0.448-1-1c0-0.552,0.448-1,1-1h8c0.552,0,1,0.448,1,1C22,9.552,21.552,10,21,10z M9,22c-0.552,0-1-0.448-1-1c0-0.552,0.448-1,1-1s1,0.448,1,1C10,21.552,9.552,22,9,22z M21,22h-8c-0.552,0-1-0.448-1-1c0-0.552,0.448-1,1-1h8c0.552,0,1,0.448,1,1C22,21.552,21.552,22,21,22z"></path>
+                    </svg>
+                </h2>
+            </div>
+            <div class="card-section">
+                <div class="rte text-pull">
+                    <h4 class="center"><b>Fique linda e super aquecida nos dias mais frios!</b></h4>
+                    <p class="center">Essa Meia Calça é perfeita para usar com saias, vestidos e shorts sem passar frio! Ela imita o efeito fio 15, mas você estará vestindo uma calça macia e quentinha!</p>
+                    <div class="center">
+                        <img src="https://cdn.shopify.com/s/files/1/0608/0331/7948/files/987_1_f86fe02e-392b-4aa4-81b2-4754be0d474f_480x480.webp?v=1684328246" alt="Meia Calça" class="image">
+                    </div>
+                    <h4 class="center"><b>Mantenha suas pernas quentes e confortáveis durante o inverno!</b></h4>
+                    <p class="center">Com tecido de pelúcia interna, ela proporciona um toque suave e agradável à pele, além de manter o calor do corpo retido. Mantém o máximo de conforto e proteção.</p>
+                    <img src="https://cdn.shopify.com/s/files/1/0608/0331/7948/files/Meia-Calca-Peluciada---Frost-Angel-_-PRECO-PROMOCIONAL-_-Nova-Estelar-1682895338_1_5f9eb19a-b5bf-4c08-89bc-f77f768c3048_480x480.webp?v=1685126866" alt="Meia Calça" class="image">
+                    <h4 class="center"><b>Tonalidade de cor perfeita</b></h4>
+                    <p class="center">Um tom maravilhoso que combina com todas as mulheres. Destaca e modela as pernas, tira imperfeições e dá um toque de elegância e conforto nos dias mais frios.</p>
+                    <div class="center">
+                        <img src="https://i.postimg.cc/PfSBt1NX/Inovedescontos-com-1-8ad2e725-b800-4d55-ab31-7a3d9b8f200a-transformed.webp" alt="Meia Calça" class="image">
+                    </div>
+                    <h4 class="center"><b>Não rasga e não puxa fios</b></h4>
+                    <p class="center">Chega de meia-calça descartáveis, ela possui tecnologia de tecelagem 3D, o que torna muito difícil rasgar ou puxar fios. Saia de casa tranquila e pronta para qualquer ocasião!</p>
+                    <img src="https://cdn.shopify.com/s/files/1/0608/0331/7948/files/Hac66be4abaaa4585861231b68f37083c5_480x480.jpg?v=1683571070" alt="Meia Calça" class="image">
+                    <h4 class="center"><b>Efeito translucido</b></h4>
+                    <p class="center">Tecnologia de última geração para dar à sua meia calça o efeito de transparência, mesmo sendo forrada com lã. Por fora, irá parecer uma meia-calça normal.</p>
+                    <img src="https://i.postimg.cc/PfSBt1NX/Inovedescontos-com-1-8ad2e725-b800-4d55-ab31-7a3d9b8f200a-transformed.webp" alt="Meia Calça" class="image">
+                    <h4 class="center"><b>Tamanho único</b></h4>
+                    <p class="center">Devido à sua alta elasticidade, sem apertar ou limitar seus movimentos, moldando e realçando as suas curvas.</p>
+                    <img src="https://cdn.shopify.com/s/files/1/0610/8436/9101/files/cortar_webp_480x480_89499b99-7f99-4460-acd9-7da02a079542_480x480.webp?v=1680647760" alt="Meia Calça" class="image">
+                    <h4 class="center"><b>Feita para todas as mulheres</b></h4>
+                    <p>✔️ Modelagem perfeita e confortável, sem apertar ou escorregar.</p>
+                    <p>✔️ Tamanho único, pois é fabricada em tecido macio e elástico.</p>
+                    <p>✔️ Liberdade dos movimentos, sem limitações ou desconforto.</p>
+                    <p>✔️ É fácil de cuidar e lavar, mantendo sua elasticidade e forma intactas.</p>
+                    <div class="center">
+                        <img src="https://cdn.shopify.com/s/files/1/0608/0331/7948/files/IMG05_1_480x480.jpg?v=1683568668" alt="Meia Calça" class="image">
+                    </div>
+                    <p><b>Benefícios da Meia Calça:</b></p>
+                    <p>✅ Mantém suas pernas quentes e confortáveis no frio.</p>
+                    <p>✅ Tecido de alta qualidade e pelúcia macia para uma sensação aconchegante.</p>
+                    <p>✅ Cintura elástica para um ajuste seguro e confortável.</p>
+                    <p>✅ Costuras reforçadas para maior durabilidade.</p>
+                    <div class="center">
+                        <img src="https://cdn.shopify.com/s/files/1/0608/0331/7948/files/CopiadeLuminariaCristalLux_3_480x480.png?v=1687005315" alt="Meia Calça" class="image">
+                    </div>
+                    <p class="center"><b>ATENÇÃO!</b></p>
+                    <div class="center">
+                        <img src="https://cdn.shopify.com/s/files/1/0608/0331/7948/files/WhatsAppImage2023-06-17at14.59.45_480x480.jpg?v=1687025046" alt="Meia Calça" class="image">
+                    </div>
+                    <p><b>Especificações:</b><br><b>Material externo:</b> Nylon, Poliéster<br><b>Efeito:</b> Translúcido</p>
+                    <p style="margin: 20px 0 20px;"><b>O pacote inclui:</b><br>Kit com 2 Meia Calça Forrada Translúcida</p>
+                    <p class="center" style="color: #000000;"><b>DEVIDO AO GRANDE SUCESSO DE PEDIDOS, RESTAM AS ÚLTIMAS UNIDADES DISPONÍVEIS!</b></p>
+                    <h3 class="center" style="color: #0eb059;"><b>APROVEITE A PROMOÇÃO E GANHE +1 MEIA CALÇA DE BRINDE SOMENTE HOJE!</b></h3>
+                    <p style="margin: 20px 0 20px;"><b style="color: #0eb059;">✔️ Envios para todo o Brasil:</b> Todos os pedidos são enviados via Correios com código de rastreamento para você acompanhar seu pedido.</p>
+                    <p style="margin: 20px 0 20px;"><b style="color: #0eb059;">✔️ Suporte ao cliente:</b> Atualizamos o andamento do seu pedido via E-mail, em caso de alguma dúvida entre em contato conosco e estaremos prontos para te atender.</p>
+                    <p style="margin: 20px 0 20px;"><b style="color: #0eb059;">✔️ Satisfação Garantida:</b> Confiamos tanto em nossa qualidade, que após você adquirir nosso produto e usá-lo por 7 dias, e caso não goste do mesmo ou ele apresentar algum defeito, nós devolveremos 100% do dinheiro!</p>
+                    <p style="margin: 20px 0 20px;"><span style="color: #0eb059;"><b>NOSSA GARANTIA &amp; RISCO ZERO</b></span></p>
+                    <p>Cumprimos conforme a legislação brasileira, que o cliente tem até 7 dias para devolução por quaisquer problemas ou insatisfação, a contar do ato de recebimento do produto. Na <b>Inove Descontos</b> concedemos a devolução de 100% do valor do produto.</p>
+                    <div class="center">
+                        <img src="https://cdn.shopify.com/s/files/1/0278/3327/0361/files/nova_garantia.png?v=1649804460" alt="Garantia" class="image">
+                    </div>
+                    <div class="center">
+                        <img src="https://cdn.shopify.com/s/files/1/0608/0331/7948/files/SEJAUMREVENDEDORINOVEcortado_1_480x480.png?v=1688916653" alt="Revendedor" class="image">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Customer Reviews Section -->
+    <section class="customer-reviews">
+        <div class="container">
+            <h2>Avaliações de Clientes</h2>
+            <hr class="section-divider">
+            <div class="rating-overview">
+                <div class="rating-score">
+                    <h1>4.9/5</h1>
+                    <div class="stars">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                    </div>
+                    <p>A partir de 327 Avaliações</p>
+                </div>
+                <div class="divider"></div>
+                <div class="rating-breakdown">
+                    <div class="rating-bar">
+                        <span>5</span> <span class="stars">★★★★★</span> <span class="bar"><span class="filled" style="width: 96%;"></span></span> <span>315</span>
+                    </div>
+                    <div class="rating-bar">
+                        <span>4</span> <span class="stars">★★★★☆</span> <span class="bar"><span class="filled" style="width: 3%;"></span></span> <span>9</span>
+                    </div>
+                    <div class="rating-bar">
+                        <span>3</span> <span class="stars">★★★☆☆</span> <span class="bar"><span class="filled" style="width: 1%;"></span></span> <span>3</span>
+                    </div>
+                    <div class="rating-bar">
+                        <span>2</span> <span class="stars">★★☆☆☆</span> <span class="bar"><span class="filled"></span></span> <span>0</span>
+                    </div>
+                    <div class="rating-bar">
+                        <span>1</span> <span class="stars">★☆☆☆☆</span> <span class="bar"><span class="filled"></span></span> <span>0</span>
+                    </div>
+                </div>
+                <div class="divider"></div>
+                <button class="write-review">Escreva uma avaliação</button>
+            </div>
+            <hr class="section-divider">
+            <div class="reviews">
+                <div class="review-card">
+                    <h3>Karoline <span class="verified">Verificado</span></h3>
+                    <div class="stars">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                    </div>
+                    <p>Perfeita, bem confortável e parece uma meia calça normal. Veste muito bem e não aperta!</p>
+                    <img src="https://www.images.areviewsapp.com/inovedescontos.myshopify.com/I9Fd2TDlbHKnC6q.jpg" alt="Review Image 1">
+                </div>
+                <div class="review-card">
+                    <h3>Claire Santini <span class="verified">Verificado</span></h3>
+                    <div class="stars">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                    </div>
+                    <p>Eu amo isso como a imagem, eu me perguntei para o mais grosso que é o que é fusty e eu adoro isso, eu me perguntei por um xl desde que eu vi que era pequeno e estava correto, eu que sou magro construir o xl era justo, então tenha um olho</p>
+                    <img src="https://i.postimg.cc/1tT8pfML/A86130ad32a6d4a4d808ee1f7453943aag-jpg.webp" alt="Review Image 2">
+                </div>
+                <div class="review-card">
+                    <h3>Isabella <span class="verified">Verificado</span></h3>
+                    <div class="stars">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                    </div>
+                    <p>Eu amei muito bom produto com boas conclusões 10/10 são dúvidas que vou comprar novamente</p>
+                    <img src="https://i.postimg.cc/8c6jwN0s/A43b7ae3ffe1d44f5b15b492f341e3b91-M-jpg.webp" alt="Review Image 3">
+                </div>
+                <div class="review-card">
+                    <h3>Emily Bittencourt <span class="verified">Verificado</span></h3>
+                    <div class="stars">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                    </div>
+                    <p>Loja confiavel estou adorando usar pq são suupeer confortaveis</p>
+                    <img src="https://i.postimg.cc/pV4GsvTv/Af18bc7982a84411b8f45e168710c9b74-R-jpg.webp" alt="Review Image 4">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="small-container">
+        <div class="row row-2">
+            <h2>Produtos relacionados</h2>
+            <p>Veja mais</p>
+        </div>
+        <div class="row">
+            <div class="col-4">
+                <img src="images/product-9.jpg" alt="Black Sportx Watch">
+                <h4>Black Sportx Watch</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>$135.00</p>
+            </div>
+            <div class="col-4">
+                <img src="images/product-10.jpg" alt="Black HRX Shoes">
+                <h4>Black HRX Shoes</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-o"></i>
+                </div>
+                <p>$50.00</p>
+            </div>
+            <div class="col-4">
+                <img src="images/product-11.jpg" alt="Gray Nike Shoes">
+                <h4>Gray Nike Shoes</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-o"></i>
+                </div>
+                <p>$55.00</p>
+            </div>
+            <div class="col-4">
+                <img src="images/product-12.jpg" alt="HRX Black Trackpants">
+                <h4>HRX Black Trackpants</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>$75.00</p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col1">
+                    <h3>Baixe nosso aplicativo</h3>
+                    <p>Baixe o aplicativo para celular Android e iOS.</p>
+                    <div class="app-logo">
+                        <img src="images/play-store.png" alt="Play Store">
+                        <img src="images/app-store.png" alt="App Store">
+                    </div>
+                </div>
+                <div class="footer-col2">
+                    <img src="images/v1.webp" alt="Logo">
+                    <p>Nosso objetivo é tornar o prazer e os benefícios da Moda acessíveis a todos de forma Simples.</p>
+                </div>
+                <div class="footer-col3">
+                    <h3>Links Úteis</h3>
+                    <ul>
+                        <li>Cupons</li>
+                        <li>Blog Post</li>
+                        <li>Política de devolução</li>
+                        <li>Junte-se ao afiliado</li>
+                    </ul>
+                </div>
+                <div class="footer-col4">
+                    <h3>Siga-nos</h3>
+                    <ul>
+                        <li>Facebook</li>
+                        <li>Twitter</li>
+                        <li>Instagram</li>
+                        <li>YouTube</li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <p class="copyright">Copyright 2024 - VestMom</p>
+        </div>
+    </footer>
+
+    <script>
+        var MenuItems = document.getElementById("MenuItems");
+        MenuItems.style.maxHeight = "0px";
+        
+        function menutoggle() {
+            if (MenuItems.style.maxHeight === "0px") {
+                MenuItems.style.maxHeight = "200px";
+            } else {
+                MenuItems.style.maxHeight = "0px";
+            }
+        }
+        
+        // Product Gallery
+        var ProductImg = document.getElementById("ProductImg");
+        var SmallImg = document.getElementsByClassName("small-img");
+        
+        for (let i = 0; i < SmallImg.length; i++) {
+            SmallImg[i].onclick = function() {
+                ProductImg.src = SmallImg[i].src;
+            }
+        }
+
+        function addToCart() {
+            var product = {
+                name: "Meia-Calça Peluciada",
+                price: 98.70,
+                quantity: parseInt(document.getElementById("quantity").value),
+                image: "images/meia-calsa/6.webp"
+            };
+
+            var cart = localStorage.getItem("cart");
+            if (cart) {
+                cart = JSON.parse(cart);
+            } else {
+                cart = [];
+            }
+
+            cart.push(product);
+            localStorage.setItem("cart", JSON.stringify(cart));
+            window.location.href = "https://seguro.tresestilo.com/r/43GALWHAQX";
+        }
+    </script>
+</body>
+</html>

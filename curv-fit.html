@@ -1,0 +1,938 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shorts Curve Fit - Pré & Pós parto</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+     <!-- pixel facebook-->
+<script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '385902050609326');
+    fbq('track', 'PageView');
+    fbq('track', 'pv-curv-fit');
+    fbq('track', 'ViewContent');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=385902050609326&ev=PageView&noscript=1"
+    /></noscript>
+    <!-- fim do pixel facebook -->
+
+    <style>
+       body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            padding-left: 25px;
+            padding-right: 25px;
+        }
+
+        .navbar {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 20px 0;
+        }
+
+        .logo img {
+            width: 125px;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li {
+            padding: 0 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #555;
+        }
+
+        .menu-icon {
+            width: 30px;
+            cursor: pointer;
+            display: none;
+        }
+
+        .small-container {
+            max-width: 1080px;
+            margin: auto;
+            padding-left: 25px;
+            padding-right: 25px;
+        }
+
+        .single-product .row {
+            display: flex;
+            flex-wrap: wrap;
+            margin-top: 10px;
+        }
+
+        .single-product .row .col-2 {
+            flex-basis: 50%;
+        }
+
+        .single-product .row .col-2 img {
+            padding: 2px;
+            border: solid 1px #676161;
+            border-radius: 10px;
+        }
+
+        .small-img-row {
+            display: flex;
+            justify-content: space-between;
+            padding-top: 4px;
+        }
+
+        .small-img-col {
+            flex-basis: 24%;
+            cursor: pointer;
+        }
+
+        .btn {
+            display: inline-block;
+            background-color: #008a00;
+            color: #fff;
+            padding: 8px 30px;
+            margin: 30px 0;
+            border-radius: 6px;
+            transition: background 0.5s;
+            text-shadow: 1px 2px 2px rgb(0 0 0 / 70%);
+            box-shadow: 0 0 0 0 #008a004a;
+        }
+            @-webkit-keyframes pulse{0%{
+              -moz-transform:scale(1);
+              -ms-transform:scale(1);
+              -webkit-transform:scale(1);
+              transform:scale(1)}70%{-moz-transform:scale(1);
+              -ms-transform:scale(1);
+              -webkit-transform:scale(1);
+              transform:scale(1);
+              box-shadow:0 0 0 16px rgba(90,153,212,0);
+              }100%{-moz-transform:scale(1);
+              -ms-transform:scale(1);
+              -webkit-transform:scale(1);transform:scale(1);
+              box-shadow:0 0 0 0 rgba(90,153,212,0);}}
+    
+        .btn:hover {
+            background-color: #008a00;
+        }
+
+        .row-2 {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: 20px 0;
+            border-bottom: 1px solid #ccc;
+            padding-bottom: 10px;
+        }
+
+        .row-2 h2 {
+            font-size: 24px;
+            font-weight: 600;
+        }
+
+        .row-2 p {
+            color: #ff523b;
+        }
+
+        .col-4 {
+            flex-basis: 25%;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+
+        .col-4 img {
+            width: 100%;
+        }
+
+        .rating .fa {
+            color: #ff523b;
+        }
+
+        .footer {
+            background-color: #222;
+            color: #fff;
+            padding: 60px 0 20px;
+        }
+
+        .footer-col1, .footer-col2, .footer-col3, .footer-col4 {
+            flex-basis: 25%;
+            padding: 10px 20px;
+        }
+
+        .footer-col1 h3, .footer-col2 h3, .footer-col3 h3, .footer-col4 h3 {
+            font-size: 20px;
+            margin-bottom: 20px;
+        }
+
+        .footer-col1 p, .footer-col2 p {
+            font-size: 14px;
+            line-height: 24px;
+        }
+
+        .app-logo img {
+            margin: 10px 0;
+        }
+
+        .footer ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .footer ul li {
+            line-height: 24px;
+        }
+
+        .footer ul li a {
+            text-decoration: none;
+            color: #fff;
+            font-size: 14px;
+        }
+
+        .footer hr {
+            border: none;
+            background-color: #ccc;
+            height: 1px;
+            margin: 20px 0;
+        }
+
+        footer .copyright {
+            text-align: center;
+            font-size: 14px;
+            color: #8a8a8a;
+        }
+
+        /* Product Description Section CSS */
+        .product-description {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .card {
+            border: 1px solid #ddd;
+            border-radius: 6px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+
+        .card-header {
+            box-shadow: 0px 9px 25px -24px black;
+            padding: 9px;
+            border-bottom: inherit;
+            border-radius: 6px 6px 0 0;
+            background-color: #f9f9f9;
+        }
+
+        .card-title {
+            display: flex;
+            flex-direction: row-reverse;
+            align-items: center;
+            justify-content: flex-end;
+            font-size: 13px;
+            text-transform: uppercase;
+        }
+
+        .icon {
+            fill: #727272;
+        }
+
+        .card-section {
+            padding: 20px;
+        }
+
+        .rte {
+            text-align: left;
+        }
+
+        .center {
+            text-align: center;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 29.92px;
+            margin-block-end: 11.2px;
+        }
+
+        .image {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            max-width: 100%;
+            height: auto;
+            padding: 18px;
+        }
+
+        /* Customer Reviews Section CSS */
+        .customer-reviews {
+            background-color: #fff;
+            padding: 50px 0;
+        }
+
+        .customer-reviews .container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 0 15px;
+        }
+
+        .customer-reviews h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .section-divider {
+            border: 0;
+            height: 1px;
+            background: #ccc;
+            margin: 20px 0;
+        }
+
+        .rating-overview {
+            display: flex;
+            flex-wrap: nowrap;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 30px;
+            position: relative;
+        }
+
+        .rating-score, .rating-breakdown, .write-review {
+            padding: 10px 0;
+            position: relative;
+        }
+
+        .rating-score::after, .rating-breakdown::after {
+            content: '';
+            position: absolute;
+            right: 0;
+            top: 0;
+            height: 100%;
+            margin: 0 -50%;
+            width: 1px;
+            border-right: 1px dotted #ccc;
+        }
+
+        .rating-score {
+            text-align: center;
+            flex-basis: auto;
+            margin-bottom: 0;
+        }
+
+        .rating-score h1 {
+            font-size: 48px;
+            margin: 0;
+        }
+
+        .rating-score .stars {
+            color: #ffbf00;
+        }
+
+        .rating-score p {
+            margin: 5px 0 0;
+            color: #777;
+        }
+
+        .rating-breakdown {
+            flex-grow: 1;
+            margin: 0 20%;
+        }
+
+        .rating-bar {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+
+        .rating-bar span {
+            display: inline-block;
+            width: 30px;
+        }
+
+        .rating-bar .stars {
+            color: #ffbf00;
+            margin-right: 39px;
+            flex-shrink: 0;
+        }
+
+        .rating-bar .bar {
+            flex-grow: 1;
+            height: 8px;
+            background-color: #eee;
+            border-radius: 4px;
+            overflow: hidden;
+            margin-right: 10px;
+            position: relative;
+        }
+
+        .rating-bar .filled {
+            display: block;
+            height: 100%;
+            background-color: #ffbf00;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 1;
+        }
+
+        .write-review {
+            background-color: #000;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            flex-basis: auto;
+            text-align: center;
+        }
+
+        .write-review:hover {
+            background-color: #333;
+        }
+
+        .reviews {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .review-card {
+            background-color: #f9f9f9;
+            border: 1px solid #ddd;
+            border-radius: 6px;
+            padding: 20px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+            flex-basis: 100%;
+            max-width: 300px;
+        }
+
+        .review-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .review-card h3 {
+            margin: 0 0 10px;
+            font-size: 18px;
+        }
+
+        .review-card .verified {
+            color: #28a745;
+            font-size: 14px;
+        }
+
+        .review-card .stars {
+            color: #ffbf00;
+            margin-bottom: 10px;
+        }
+
+        .review-card p {
+            font-size: 14px;
+            color: #777;
+            margin: 0 0 10px;
+        }
+
+        .review-card img {
+            max-width: 100%;
+            border-radius: 4px;
+        }
+        .pulse{
+          -webkit-animation: pulse 1.5s infinite;
+        }
+
+        @media screen and (min-width: 600px) {
+            .review-card {
+                flex-basis: 48%;
+            }
+        }
+
+        @media screen and (min-width: 992px) {
+            .review-card {
+                flex-basis: 23%;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .rating-overview {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .rating-score, .rating-breakdown, .write-review {
+                margin-bottom: 20px;
+                width: 100%;
+                text-align: center;
+            }
+
+            .rating-score::after, .rating-breakdown::after {
+                border-right: none;
+                border-bottom: 1px dotted #ccc;
+                width: 100%;
+                height: 1px;
+                bottom: 0;
+                top: auto;
+                margin: auto;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="navbar">
+            <div class="logo">
+                <a href="index.html"><img src="images/v2.webp" width="125px" alt="Logo"></a>
+            </div>
+            <nav>
+                <ul id="MenuItems" style="max-height: 0px;">
+                    <li><a href="index.html">Início</a></li>
+                    <!--li><a href="products.html">Produtos</a></li -->
+                    <li><a href="">Sobre</a></li>
+                    <li><a href="">Contato</a></li>
+                    <li><a href="account.html">Conta</a></li>
+                </ul>
+            </nav>
+            <a href="cart.html"><img src="images/cart.png" width="30px" height="30px" alt="Cart"></a>
+            <img src="images/menu.png" class="menu-icon" alt="Menu Icon" onclick="menutoggle()">
+        </header>
+    </div>
+    
+    <main class="small-container single-product">
+        <div class="row">
+            <div class="col-2">
+                <img src="images/curv-fit/2.png" width="100%" id="ProductImg" alt="Product Image">
+                <div class="small-img-row">
+                    <div class="small-img-col">
+                        <img src="images/curv-fit/2.png" class="small-img" width="100%" alt="Gallery Image 1">
+                    </div>
+                    <div class="small-img-col">
+                        <img src="images/curv-fit/1.png" class="small-img" width="100%" alt="Gallery Image 1">
+                    </div>
+                    <div class="small-img-col">
+                        <img src="images/curv-fit/3.png" class="small-img" width="100%" alt="Gallery Image 2">
+                    </div>
+                    <div class="small-img-col">
+                        <img src="images/curv-fit/4.png" class="small-img" width="100%" alt="Gallery Image 3">
+                    </div>
+                    <div class="small-img-col">
+                        <img src="images/curv-fit/5.png" class="small-img" width="100%" alt="Gallery Image 4">
+                    </div>
+                </div>
+            </div>
+            <div class="col-2">
+                <p>curv-fit</p>
+                <h1>Shorts Curve Fit - Pré & Pós parto</h1>
+                <h4>R$98,70</h4>
+                <h3>Tamanho: <span id="selected-size" style="color: #e2391b;">PP 45-55Kg</span></h3>
+                <select id="size-select">
+                    <option>Select Size</option>
+                    <option value="link_pp" selected>PP 45-55Kg</option>
+                    <option value="link_p">P 55-65kg</option>
+                    <option value="link_m">M 65-75Kg</option>
+                    <option value="link_g">G 75-85Kg</option>
+                    <option value="link_gg">GG 85-95Kg</option>
+                    <option value="link_xg">XG 95-105Kg</option>
+                </select>
+                <input type="number" value="1" id="quantity">
+                <button id="buy-button" class="btn pulse">🛒 COMPRAR AGORA!</button>
+                </div>
+                <!--h3>Product Details <i class="fa fa-indent"></i></h3>
+                <p>Give your summer wardrobe a style upgrade with the HRX Men's Active T-shirt. Team it with a pair of shorts for your morning workout or denims for an evening out with the guys.</p -->
+            </div>
+        </div>
+    </main>
+
+    <!-- Product Description Section -->
+    <section class="product-description">
+        <div class="card">
+            <div class="card-header">
+                <h2 class="card-title heading h3">Descrição
+                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 30 30" class="icon">
+                        <path d="M24,4H6C4.895,4,4,4.895,4,6v18c0,1.105,0.895,2,2,2h18c1.105,0,2-0.895,2-2V6C26,4.895,25.105,4,24,4z M9,16c-0.552,0-1-0.448-1-1c0-0.552,0.448-1,1-1s1,0.448,1,1C10,15.552,9.552,16,9,16z M21,16h-8c-0.552,0-1-0.448-1-1c0-0.552,0.448-1,1-1h8c0.552,0,1,0.448,1,1C22,15.552,21.552,16,21,16z M9,10c-0.552,0-1-0.448-1-1c0-0.552,0.448-1,1-1s1,0.448,1,1C10,9.552,9.552,10,9,10z M21,10h-8c-0.552,0-1-0.448-1-1c0-0.552,0.448-1,1-1h8c0.552,0,1,0.448,1,1C22,9.552,21.552,10,21,10z M9,22c-0.552,0-1-0.448-1-1c0-0.552,0.448-1,1-1s1,0.448,1,1C10,21.552,9.552,22,9,22z M21,22h-8c-0.552,0-1-0.448-1-1c0-0.552,0.448-1,1-1h8c0.552,0,1,0.448,1,1C22,21.552,21.552,22,21,22z"></path>
+                    </svg>
+                </h2>
+            </div>
+            <div class="card-section">
+                <div class="rte text-pull">
+                    <h1 style="text-align: center;"><b style="color: #fff;background-color: #f00;font-size: 21px;">ÚLTIMO DIA DE PROMOÇÃO</b></h1>
+                    <h4 class="center"><b>ACABE COM A FLACIDEZ ABDOMINAL E COM A POCHETE SEM CIRURGIA, E RESGATE SUA AUTOESTIMA. </b></h4>
+                    <p class="center">Está cansada de sentir vergonha por ter aquela barriga caída pós-parto? 
+
+                        Pochete e Estomago alto te impede de usar sua roupa favorita?
+                        
+                        Mesmo você não sendo Mâe sem duvidas o Shorts Curve Fit e a sua melhor escolha!</p>
+                    <div class="center">
+                        <img src="https://cdn.shopify.com/s/files/1/0675/8609/7365/files/GIF2_480x480_b6db9402-0e8e-444e-b647-b49c4b0ad881_480x480.webp" alt="Meia Calça" class="image">
+                        <img src="https://cdn.shopify.com/s/files/1/0692/5212/0851/files/barriga_02-removebg-preview_480x480_c52da8fa-c255-4f5c-836a-26addba0ad33_480x480.png" alt="Meia Calça" class="image">
+
+                    </div>
+                    <h4 class="center"><b>RESULTADO DE ANOS DE ACADEMIA EM POUCOS DIAS.</b></h4>
+                    <p class="center">Entre 7 e 15 dias você já vai colher os resultados do Curve Fit e à medida que você seguir utilizando o Curve Shape, você terá um resultado igual de mulheres que ficam anos exercitando o abdômen e bumbum, e o melhor ainda, sem precisar ficar fazendo todo aquele esforço, ou até mesmo tomar medicamentos para isso!
+
+                    </p>
+                    <img src="https://cdn.shopify.com/s/files/1/0692/5212/0851/files/barriga_01-removebg-preview_480x480_1df314d6-4291-4af7-958c-d846d31a3dbf_480x480.png" alt="Meia Calça" class="image">
+                    <h4 class="center"><b>Tonalidade de cor perfeita</b></h4>
+                    <p class="center">Esse shorts foi exclusivamente desenvolvido para recuperar a diástase e a barriga que fica estufada, ou caída e flácida como um avental, que abala sua autoestima.
+                        O Curve Fit faz sua barriga voltar para o lugar de forma eficiente e sem precisar fazer cirurgia ou gastar com tratamentos.</p>
+                    <div class="center">
+                        <img src="https://cdn.shopify.com/s/files/1/0675/8609/7365/files/Curv-Fit.webp" alt="Meia Calça" class="image">
+                    </div>
+                    <h4 class="center"><b>Não rasga e não puxa fios</b></h4>
+                    <p class="left" style="font-size: 14px;">Recupera a Diástase deixando a barriga reta e durinha<br> Afina a Cintura em poucas semanas<br> Faz sua barriga voltar para o lugar.<br> PRIMEIROS RESULTADOS 3 A 15 DIAS. Sem cirurgia, sem lipo ou tratamento, sem dietas ou remédios.</p>
+                    <img src="https://cdn.shopify.com/s/files/1/0675/8609/7365/files/Design_sem_nome_32_480x480_480x480_8fb98794-9425-44ed-a5fd-9de26225bef6.webp" alt="Meia Calça" class="image">
+                    <h4 class="center"><b>Uso diário: 1-4 horas / dia</b></h4>
+                    <img style="border-radius: 40px;" src="https://cdn.shopify.com/s/files/1/0645/7950/2254/files/Captura_de_tela_08-04-2024_22.30.16.png" alt="Meia Calça" class="image">
+                    <h4 class="center"><b>DEPOIS DA GRAVIDEZ VOCÊ SOFRE COM...</b></h4>
+                    <p class="left"><b>Barriga caída, avental, pochete, estômago alto ou ainda parece grávida.
+                         <br>
+                        Diástase que o médico disse que só resolveria com cirurgia
+                        <br>
+                        Escapes de xixi ou vagina larga.
+                        <br>
+                        Dores na relação.
+                        <br>
+                        Vergonha do seu corpo e do seu marido.
+                        <br>
+                        Autoestima lá no chão.
+                        </b><br>
+                        Mais de 5.000 Mães já transformaram sua vida usando o Curve Fit veja os primeiros resultados entre 7 e 15 dias.</p>
+                    <h4 class="center"><b>COMO FUNCIONA O CURVE FIT</b></h4>
+                    <img src="https://cdn.shopify.com/s/files/1/0675/8609/7365/files/Barrigas_1_480x480_9cf07ab3-f1a9-423e-9840-9fc10160d590_480x480.webp" alt="Meia Calça" class="image">
+                    <p class="center">Com a Tecnologia Burn Fat, ocorre o calor térmico e corporal, fazendo com que queime 10x mais calorias e eliminando toda retenção de líquido na área abdominal, a transpiração não é visível do lado de fora.</p>
+                    <img src="https://cdn.shopify.com/s/files/1/0675/8609/7365/files/GIF2_480x480_b6db9402-0e8e-444e-b647-b49c4b0ad881_480x480.webp" alt="Meia Calça" class="image">
+                    <h4 class="center"><b>RESULTADOS REAIS DE PESSOAS COMO VOCÊ</b></h4>
+                    <img src="https://cdn.shopify.com/s/files/1/0675/8609/7365/files/2_480x480.webp" alt="Meia Calça" class="image">
+                    <img src="https://cdn.shopify.com/s/files/1/0675/8609/7365/files/3_480x480.webp" alt="Meia Calça" class="image">
+                    <img src="https://cdn.shopify.com/s/files/1/0675/8609/7365/files/1_480x480.webp" alt="Meia Calça" class="image">
+                    <img src="https://cdn.shopify.com/s/files/1/0683/5073/8722/files/cop13pos_480x480.jpg" alt="Meia Calça" class="image">
+                    </div>
+                    
+                    <p><b>BENEFÍCIOS DO CURVE FIT:</b></p>
+                    <p>✅ Modela sua cintura (Criação de Curvas Corporais)</p>
+                    <p>✅ Maior Conforto</p>
+                    <p>✅ Cintura Ajustável</p>
+                    <p>✅ Malha Respirável</p>
+                    <p>✅ Auxilia na Postura (Mantém a coluna Ereta)</p>
+                    <p>✅ Auxilia na Queima de Calorias</p>
+                    <p>✅ Empina Bumbum</p>
+                    <p>✅ Ideal para uso diário em atividades físicas</p>
+                    <p>✅ Melhor Mobilidade</p>
+                    <p>✅ Elimina Toxinas retidas no corpo</p>
+                    <p>✅ Auxilia na remoção da diástase e estomago alto</p>
+                
+                    <div class="center">
+                        <img src="https://cdn.shopify.com/s/files/1/0299/1718/4138/files/Captura_de_Tela_2022-09-07_as_18.11.42.png?v=1662585448" alt="Meia Calça" class="image">
+                    </div>
+
+                    <p><b>Especificações:</b>
+                    <br><b>Material</b> Poliéster, Nylon e Spandex<br>
+                    <b>Indicação de uso:</b> Diminuição de medidas</p>
+                   
+                    <p class="center" style="color: #000000; margin-top: 20px;"><b>Compre agora e Leve um Presente especial 100% GRATUITO</b></p>
+                    <div class="center">
+                        <img src="https://cdn.shopify.com/s/files/1/0675/8609/7365/files/BRINDEEXTRA_1_282a0e14-ca6e-4788-8069-1ebeb7694a93_480x480__1_-removebg-preview_480x480.png?v=1703469929" alt="Meia Calça" class="image">
+                    </div>
+                    <h3 class="center" style="color: #0eb059;"><b>APROVEITE A PROMOÇÃO SOMENTE HOJE!</b></h3>
+                    
+                    <p style="margin: 20px 0 20px;"><b style="color: #0eb059;">✔️ Envios para todo o Brasil:</b> Todos os pedidos são enviados via Correios com código de rastreamento para você acompanhar seu pedido.</p>
+                    
+                    <p style="margin: 20px 0 20px;"><b style="color: #0eb059;">✔️ Suporte ao cliente:</b> Atualizamos o andamento do seu pedido via E-mail, em caso de alguma dúvida entre em contato conosco e estaremos prontos para te atender.</p>
+                    
+                    <p style="margin: 20px 0 20px;"><b style="color: #0eb059;">✔️ Satisfação Garantida:</b> Confiamos tanto em nossa qualidade, que após você adquirir nosso produto e usá-lo por 7 dias, e caso não goste do mesmo ou ele apresentar algum defeito, nós devolveremos 100% do dinheiro!</p>
+                    
+                    <p style="margin: 20px 0 20px;"><span style="color: #0eb059;"><b>NOSSA GARANTIA &amp; RISCO ZERO</b></span></p>
+                    
+                    <p>Cumprimos conforme a legislação brasileira, que o cliente tem até 7 dias para devolução por quaisquer problemas ou insatisfação, a contar do ato de recebimento do produto. Na <b>VestMom</b> concedemos a devolução de 100% do valor do produto.</p>
+                   
+                    <div class="center">
+                        <img src="https://cdn.shopify.com/s/files/1/0278/3327/0361/files/nova_garantia.png?v=1649804460" alt="Garantia" class="image">
+                    </div>
+                    <div class="center">
+                        <img src="https://cdn.shopify.com/s/files/1/0692/5212/0851/files/comprasegura_480x480_4a8d4467-4d0b-4efb-9e13-2dbf8afeac03_480x480.png?v=1671399609" alt="Revendedor" class="image">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Customer Reviews Section -->
+    <section class="customer-reviews">
+        <div class="container">
+            <h2>Avaliações de Clientes</h2>
+            <hr class="section-divider">
+            <div class="rating-overview">
+                <div class="rating-score">
+                    <h1>4.9/5</h1>
+                    <div class="stars">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                    </div>
+                    <p>A partir de 327 Avaliações</p>
+                </div>
+                <div class="divider"></div>
+                <div class="rating-breakdown">
+                    <div class="rating-bar">
+                        <span>5</span> <span class="stars">★★★★★</span> <span class="bar"><span class="filled" style="width: 96%;"></span></span> <span>315</span>
+                    </div>
+                    <div class="rating-bar">
+                        <span>4</span> <span class="stars">★★★★☆</span> <span class="bar"><span class="filled" style="width: 3%;"></span></span> <span>9</span>
+                    </div>
+                    <div class="rating-bar">
+                        <span>3</span> <span class="stars">★★★☆☆</span> <span class="bar"><span class="filled" style="width: 1%;"></span></span> <span>3</span>
+                    </div>
+                    <div class="rating-bar">
+                        <span>2</span> <span class="stars">★★☆☆☆</span> <span class="bar"><span class="filled"></span></span> <span>0</span>
+                    </div>
+                    <div class="rating-bar">
+                        <span>1</span> <span class="stars">★☆☆☆☆</span> <span class="bar"><span class="filled"></span></span> <span>0</span>
+                    </div>
+                </div>
+                <div class="divider"></div>
+                <button class="write-review">Escreva uma avaliação</button>
+            </div>
+            <hr class="section-divider">
+            <div class="reviews">
+                <div class="review-card">
+                    <h3>Karoline <span class="verified">Verificado</span></h3>
+                    <div class="stars">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                    </div>
+                    <p>Perfeita, Estou amando 5º dia material qualidade sem palavras, esse recorte M atrás realça o bumbum.</p>
+                    <img src="https://bk-reviews.b-cdn.net/stores/belaviti.myshopify.com/8227165241617/5892880067.jpg" alt="Review Image 1">
+                </div>
+                <div class="review-card">
+                    <h3>Claire Santini <span class="verified">Verificado</span></h3>
+                    <div class="stars">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                    </div>
+                    <p>Realmente tem o efeito levanta bumbum aprovadíssimo</p>
+                    <img src="https://bk-reviews.b-cdn.net/stores/belaviti.myshopify.com/8227165241617/8163628980.jpg" alt="Review Image 2">
+                </div>
+                <div class="review-card">
+                    <h3>Isabella <span class="verified">Verificado</span></h3>
+                    <div class="stars">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                    </div>
+                    <p>So queria compartilhar o resultado. Realmente faz muita diferença, eu amei... Uso diariamente, como vocês recomendam, e to me achando KKkkkk As mulheres que me connecem chegam em min e me elogiam pela agora, tô me amando 100% mais ❤️</p>
+                    <img src="https://bk-reviews.b-cdn.net/stores/belaviti.myshopify.com/8227165241617/9036745548.jpg" alt="Review Image 3">
+                </div>
+                <div class="review-card">
+                    <h3>Emily Bittencourt <span class="verified">Verificado</span></h3>
+                    <div class="stars">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                    </div>
+                    <p>não tem nada melhor que você gastar seu dinheiro em coisas que valem a pena comprei meu short sauna, chegou dentro do prazo certinho e pode acreditar que vale cada centavo, incrível Mostrar mais</p>
+                    <img src="https://bk-reviews.b-cdn.net/stores/belaviti.myshopify.com/8227165241617/4918905160.jpg" alt="Review Image 4">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="small-container">
+        <div class="row row-2">
+            <h2>Produtos relacionados</h2>
+            <p>Veja mais</p>
+        </div>
+        <div class="row">
+            <div class="col-4">
+                <img src="images/product-9.jpg" alt="Black Sportx Watch">
+                <h4>Black Sportx Watch</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>$135.00</p>
+            </div>
+            <div class="col-4">
+                <img src="images/product-10.jpg" alt="Black HRX Shoes">
+                <h4>Black HRX Shoes</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-o"></i>
+                </div>
+                <p>$50.00</p>
+            </div>
+            <div class="col-4">
+                <img src="images/product-11.jpg" alt="Gray Nike Shoes">
+                <h4>Gray Nike Shoes</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-o"></i>
+                </div>
+                <p>$55.00</p>
+            </div>
+            <div class="col-4">
+                <img src="images/product-12.jpg" alt="HRX Black Trackpants">
+                <h4>HRX Black Trackpants</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>$75.00</p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col1">
+                    <h3>Baixe nosso aplicativo</h3>
+                    <p>Baixe o aplicativo para celular Android e iOS.</p>
+                    <div class="app-logo">
+                        <img src="images/play-store.png" alt="Play Store">
+                        <img src="images/app-store.png" alt="App Store">
+                    </div>
+                </div>
+                <div class="footer-col2">
+                    <img src="images/v1.webp" alt="Logo">
+                    <p>Nosso objetivo é tornar o prazer e os benefícios da Moda acessíveis a todos de forma Simples.</p>
+                </div>
+                <div class="footer-col3">
+                    <h3>Links Úteis</h3>
+                    <ul>
+                        <li>Cupons</li>
+                        <li>Blog Post</li>
+                        <li>Política de devolução</li>
+                        <li>Junte-se ao afiliado</li>
+                    </ul>
+                </div>
+                <div class="footer-col4">
+                    <h3>Siga-nos</h3>
+                    <ul>
+                        <li>Facebook</li>
+                        <li>Twitter</li>
+                        <li>Instagram</li>
+                        <li>YouTube</li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <p class="copyright">Copyright 2024 - VestMom</p>
+        </div>
+    </footer>
+
+    <script>
+        var MenuItems = document.getElementById("MenuItems");
+        MenuItems.style.maxHeight = "0px";
+
+        function menutoggle() {
+            if (MenuItems.style.maxHeight === "0px") {
+                MenuItems.style.maxHeight = "200px";
+            } else {
+                MenuItems.style.maxHeight = "0px";
+            }
+        }
+
+        // Product Gallery
+        var ProductImg = document.getElementById("ProductImg");
+        var SmallImg = document.getElementsByClassName("small-img");
+
+        for (let i = 0; i < SmallImg.length; i++) {
+            SmallImg[i].onclick = function() {
+                ProductImg.src = SmallImg[i].src;
+            }
+        }
+
+        function addToCart() {
+            var product = {
+                name: "Shorts Curve Fit - Pré & Pós parto",
+                price: 98.70,
+                quantity: parseInt(document.getElementById("quantity").value),
+                image: "images/curv-fit/6.webp"
+            };
+
+            var cart = localStorage.getItem("cart");
+            if (cart) {
+                cart = JSON.parse(cart);
+            } else {
+                cart = [];
+            }
+
+            cart.push(product);
+            localStorage.setItem("cart", JSON.stringify(cart));
+            window.location.href = "cart.html";
+        }
+
+        // Função para atualizar o tamanho selecionado
+        function updateSelectedSize() {
+            const select = document.getElementById('size-select');
+            const selectedSizeText = select.options[select.selectedIndex].text;
+            document.getElementById('selected-size').textContent = selectedSizeText;
+        }
+
+        // Adicionar um event listener para o select
+        document.getElementById('size-select').addEventListener('change', function() {
+            updateSelectedSize();
+            const selectedSizeValue = sizeSelect.value;
+            buyButton.setAttribute('onclick', `window.location.href='${sizeLinks[selectedSizeValue]}'`);
+        });
+
+        // Inicializar o tamanho selecionado e o botão de compra
+        updateSelectedSize();
+        const sizeSelect = document.getElementById('size-select');
+        const buyButton = document.getElementById('buy-button');
+        const sizeLinks = {
+            link_pp: 'https://seguro.tresestilo.com/r/K19JFVU6JM',
+            link_p: 'https://seguro.tresestilo.com/r/DDLXX49KWL',
+            link_m: 'https://seguro.tresestilo.com/r/D9M4EI9DQG',
+            link_g: 'https://seguro.tresestilo.com/r/D33TRF5FFV',
+            link_gg: 'https://seguro.tresestilo.com/r/SD6WIPEB4I',
+            link_xg: 'https://seguro.tresestilo.com/r/PVC8M5IRE2'
+        };
+        buyButton.setAttribute('onclick', `window.location.href='${sizeLinks[sizeSelect.value]}'`);
+    </script>
+    
+</body>
+</html>

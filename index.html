@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VestMom</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- pixel facebook-->
+<script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '385902050609326');
+    fbq('track', 'PageView');
+    fbq('track', 'pv-inicial');
+    fbq('track', 'ViewContent');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=385902050609326&ev=PageView&noscript=1"
+    /></noscript>
+    <!-- fim do pixel facebook -->
+</head>
+<body>
+   
+   <div class="header">
+       <div class="container">
+          <div class="navbar">
+              <div class="logo">
+                  <a href="index.html"><img src="images/v2.webp" width="125px"></a>
+              </div>
+              <nav>
+               <ul id="MenuItems">
+                   <li><a href="index.html">Inicio</a></li>
+                   <li><a href="products.html">Produtos</a></li>
+                   <li><a href="">Sobre</a></li>
+                   <li><a href="">Contato</a></li>
+                   <li><a href="account.html">conta</a></li>
+               </ul>
+              </nav>
+              <a href="cart.html"><img src="images/cart.png" width="30px" height="30px"></a>
+              <img src="images/menu.png" onclick="menutoggle()" class="menu-icon">
+          </div>
+           <div class="row">
+                <div class="col-2">
+
+                    <h1>Dê um novo estilo ao seu guarda-roupa<br>com a VestMom!</h1>
+                    <p>Bem-vinda à VestMom, onde a moda feminina ganha um novo significado. Nossa missão é proporcionar a cada mulher a confiança e o estilo que ela merece, oferecendo peças cuidadosamente selecionadas para todas as ocasiões.</p>
+                    <a href="#" class="btn">Explore Agora &#8594;</a>
+                </div>
+                <div class="col-2">
+                    <img style="border-radius: 30%;" src="images/inicio.png">
+                </div>
+               
+           </div>
+           
+       </div>
+       </div>
+<!------------------ featured categories --------------->
+     <div class="categories">
+         <div class="small-container">
+           <div class="row">
+               <div class="col-3">
+                   <img src="images/category-1.jpg">
+               </div> 
+               <div class="col-3">
+                  <img src="images/category-2.jpg">
+               </div> 
+               <div class="col-3">
+                   <img src="images/category-3.jpg">
+               </div> 
+           </div>
+       </div>
+     </div>
+       
+<!-------------- Our Featured Products -------------->
+  
+  
+  <div class="small-container">
+        <h2 class="title">Produtos em destaque</h2>
+           <div class="row">
+               <div class="col-4">
+                   
+                   <a href="product-details.html"><img src="images/6.png"></a>
+                   <h4><a href="product-details.html">Meia Calsa-Peluciada</a></h4>
+                   <div class="rating">
+                       <i class="fa fa-star"></i>
+                       <i class="fa fa-star"></i>
+                       <i class="fa fa-star"></i>
+                       <i class="fa fa-star"></i>
+                       <i class="fa fa-star-o"></i>
+                   </div>
+                   <p>R$98,70</p>
+               </div> 
+               <div class="col-4">
+                <a href="curv-fit.html"><img src="images/2.png"></a>
+                   <h4><a href="curv-fit.html">Curve Fit - Pós parto</a></h4>
+                   <div class="rating">
+                       <i class="fa fa-star"></i>
+                       <i class="fa fa-star"></i>
+                       <i class="fa fa-star"></i>
+                       <i class="fa fa-star"></i>
+                       <i class="fa fa-star-half-o"></i>
+                   </div>
+                   <p>R$98.70</p>
+               </div> 
+               <div class="col-4">
+                   <img src="images/product-3.jpg">
+                   <h4>HRX Gray Trackpants</h4>
+                   <div class="rating">
+                       <i class="fa fa-star"></i>
+                       <i class="fa fa-star"></i>
+                       <i class="fa fa-star"></i>
+                       <i class="fa fa-star"></i>
+                       <i class="fa fa-star-half-o"></i>
+                   </div>
+                   <p>R$45.00</p>
+               </div> 
+                <div class="col-4">
+                   <img src="images/product-4.jpg">
+                   <h4>Blue Printed T-Shirt</h4>
+                   <div class="rating">
+                       <i class="fa fa-star"></i>
+                       <i class="fa fa-star"></i>
+                       <i class="fa fa-star"></i>
+                       <i class="fa fa-star"></i>
+                       <i class="fa fa-star-o"></i>
+                   </div>
+                   <p>R$55.00</p>
+               </div> 
+           </div>
+        <h2 class="title">Últimos Produtos</h2>
+             <div class="row">
+               <div class="col-4">
+                   <img src="images/product-5.jpg">
+                   <h4>Puma Gray Sports Shoes</h4>
+                   <div class="rating">
+                       <i class="fa fa-star"></i>
+                       <i class="fa fa-star"></i>
+                       <i class="fa fa-star"></i>
+                       <i class="fa fa-star"></i>
+                       <i class="fa fa-star-o"></i>
+                   </div>
+                   <p>R$95.00</p>
+               </div> 
+               <div class="col-4">
+                   <img src="images/product-6.jpg">
+                   <h4>Black Printed T-Shirt</h4>
+                   <div class="rating">
+                       <i class="fa fa-star"></i>
+                       <i class="fa fa-star"></i>
+                       <i class="fa fa-star"></i>
+                       <i class="fa fa-star"></i>
+                       <i class="fa fa-star-half-o"></i>
+                   </div>
+                   <p>R$55.00</p>
+               </div> 
+               <div class="col-4">
+                   <img src="images/product-7.jpg">
+                   <h4>HRX Set of 3 Socks</h4>
+                   <div class="rating">
+                       <i class="fa fa-star"></i>
+                       <i class="fa fa-star"></i>
+                       <i class="fa fa-star"></i>
+                       <i class="fa fa-star"></i>
+                       <i class="fa fa-star-half-o"></i>
+                   </div>
+                   <p>R$30.00</p> 
+               </div> 
+                <div class="col-4">
+                   <img src="images/product-8.jpg">
+                   <h4>Black Fossil Watch</h4>
+                   <div class="rating">
+                       <i class="fa fa-star"></i>
+                       <i class="fa fa-star"></i>
+                       <i class="fa fa-star"></i>
+                       <i class="fa fa-star"></i>
+                       <i class="fa fa-star-o"></i>
+                   </div>
+                   <p>R$120.00</p>
+               </div> 
+           </div>
+           <div class="row">
+               <div class="col-4">
+                   <img src="images/product-9.jpg">
+                   <h4>Black Sportx Watch</h4>
+                   <div class="rating">
+                       <i class="fa fa-star"></i>
+                       <i class="fa fa-star"></i>
+                       <i class="fa fa-star"></i>
+                       <i class="fa fa-star"></i>
+                       <i class="fa fa-star-o"></i>
+                   </div>
+                   <p>R$135.00</p> 
+               </div> 
+               <div class="col-4">
+                   <img src="images/product-10.jpg">
+                   <h4>Black HRX Shoes</h4>
+                   <div class="rating">
+                       <i class="fa fa-star"></i>
+                       <i class="fa fa-star"></i>
+                       <i class="fa fa-star"></i>
+                       <i class="fa fa-star"></i>
+                       <i class="fa fa-star-half-o"></i>
+                   </div>
+                   <p>R$50.00</p>
+               </div> 
+               <div class="col-4">
+                   <img src="images/product-11.jpg">
+                   <h4>Gray Nike Shoes</h4>
+                   <div class="rating">
+                       <i class="fa fa-star"></i>
+                       <i class="fa fa-star"></i>
+                       <i class="fa fa-star"></i>
+                       <i class="fa fa-star"></i>
+                       <i class="fa fa-star-half-o"></i>
+                   </div>
+                   <p>R$55.00</p>
+               </div> 
+                <div class="col-4">
+                   <img src="images/product-12.jpg">
+                   <h4>HRX Black Trackpants</h4>
+                   <div class="rating">
+                       <i class="fa fa-star"></i>
+                       <i class="fa fa-star"></i>
+                       <i class="fa fa-star"></i>
+                       <i class="fa fa-star"></i>
+                       <i class="fa fa-star-o"></i>
+                   </div>
+                   <p>R$75.00</p>
+               </div> 
+           </div>
+       </div>
+       
+<!----------offer--------------->
+  
+   <div class="offer">
+       <div class="small-container">
+           <div class="row">
+           <div class="col-2">
+               <img src="images/exclusive.png" class="offer-img">
+           </div>
+           <div class="col-2">
+               <p>Disponível exclusivamente na VestMom</p>
+               <h1>Banda Inteligente 4</h1>
+               <small>A Mi Smart Band 4 possui uma tela AMOLED colorida 39,9% maior (do que a Mi Band 3) full-touch com brilho ajustável, para que tudo fique claro como pode ser.</small>
+               <br>
+               <a href="#" class="btn">Comprar &#8594;</a>
+           </div>
+       </div>
+       </div>
+       
+   </div>
+   
+<!----------testimonial--------------->   
+  
+   <div class="testimonial">
+       <div class="small-container">
+       <div class="row">
+           <div class="col-3">
+                    <i class="fa fa-quote-left"></i>
+                      <p>A experiência de compra foi excelente. Desde o primeiro contato até a entrega do produto, tudo foi realizado com profissionalismo e eficiência. Fiquei extremamente satisfeito com a qualidade do produto e o atendimento ao cliente. Com certeza voltarei a comprar novamente.</p>
+                      <div class="rating">
+                           <i class="fa fa-star"></i>
+                           <i class="fa fa-star"></i>
+                           <i class="fa fa-star"></i>
+                           <i class="fa fa-star"></i>
+                           <i class="fa fa-star-o"></i>
+                       </div>
+                       <img src="images/user-1.png">
+                       <h3>Ana Almeida</h3>
+           </div>
+            <div class="col-3">
+                    <i class="fa fa-quote-left"></i>
+                      <p>Comprar com esta empresa foi uma experiência fantástica. O processo foi simples e rápido, e o atendimento ao cliente foi excepcional. O produto chegou dentro do prazo e em perfeitas condições. Recomendo a todos que buscam um serviço confiável e de alta qualidade.</p>
+                      <div class="rating">
+                           <i class="fa fa-star"></i>
+                           <i class="fa fa-star"></i>
+                           <i class="fa fa-star"></i>
+                           <i class="fa fa-star"></i>
+                           <i class="fa fa-star-o"></i>
+                       </div>
+                       <img src="images/user-2.png">
+                       <h3>Maurício Soares</h3>
+           </div>
+            <div class="col-3">
+                    <i class="fa fa-quote-left"></i>
+                      <p>A compra superou todas as minhas expectativas. O suporte ao cliente foi atencioso e eficiente, respondendo a todas as minhas dúvidas prontamente. O produto é de excelente qualidade e chegou antes do prazo esperado. Sem dúvida, farei mais compras no futuro.</p>
+                      <div class="rating">
+                           <i class="fa fa-star"></i>
+                           <i class="fa fa-star"></i>
+                           <i class="fa fa-star"></i>
+                           <i class="fa fa-star"></i>
+                           <i class="fa fa-star-o"></i>
+                       </div>
+                       <img src="images/user-3.png">
+                       <h3>Maria Silva</h3>
+           </div>
+       </div>
+       </div>
+   </div>
+<!----------Brands--------------->     
+    <div class="brands">
+        <div class="small-container">
+            <div class="row">
+                <div class="col-5">
+                    <img src="images/logo-godrej.png">
+                </div>
+                <div class="col-5">
+                    <img src="images/logo-oppo.png">
+                </div>
+                <div class="col-5">
+                    <img src="images/logo-coca-cola.png">
+                </div>
+                <div class="col-5">
+                    <img src="images/logo-paypal.png">
+                </div>
+                <div class="col-5">
+                    <img src="images/logo-philips.png">
+                </div>
+            </div>
+        </div>
+    </div>
+<!----------Footer---------------> 
+
+<footer class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="footer-col1">
+                <h3>Baixe nosso aplicativo</h3>
+                <p>Baixe o aplicativo para celular Android e iOS.</p>
+                <div class="app-logo">
+                    <img src="images/play-store.png" alt="Play Store">
+                    <img src="images/app-store.png" alt="App Store">
+                </div>
+            </div>
+            <div class="footer-col2">
+                <img src="images/v1.webp" alt="Logo">
+                <p>Nosso objetivo é tornar o prazer e os benefícios da Moda acessíveis a todos de forma Simples.</p>
+            </div>
+            <div class="footer-col3">
+                <h3>Links Úteis</h3>
+                <ul>
+                    <li>Cupons</li>
+                    <li>Blog Post</li>
+                    <li>Política de devolução</li>
+                    <li>Junte-se ao afiliado</li>
+                </ul>
+            </div>
+            <div class="footer-col4">
+                <h3>Siga-nos</h3>
+                <ul>
+                    <li>Facebook</li>
+                    <li>Twitter</li>
+                    <li>Instagram</li>
+                    <li>YouTube</li>
+                </ul>
+            </div>
+        </div>
+        <hr>
+        <p class="copyright">Copyright 2024 - VestMom</p>
+    </div>
+</footer>
+    
+</div>
+
+
+
+<!-------------js for toggle menu-------------->
+
+<script>
+    
+    var MenuItems = document.getElementById("MenuItems");
+    
+    MenuItems.style.maxHeight = "0px";
+    
+    function menutoggle()
+    {
+        if(MenuItems.style.maxHeight == "0px")
+            {
+                MenuItems.style.maxHeight = "200px";
+            }else
+            {
+                MenuItems.style.maxHeight = "0px"
+            } 
+    }
+    
+</script>
+
+
+
+</body>
+</html>
+
