@@ -8,20 +8,20 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
-     <!-- pixel facebook-->
-<script>
-    !function(f,b,e,v,n,t,s)
-    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-    n.queue=[];t=b.createElement(e);t.async=!0;
-    t.src=v;s=b.getElementsByTagName(e)[0];
-    s.parentNode.insertBefore(t,s)}(window, document,'script',
-    'https://connect.facebook.net/en_US/fbevents.js');
-    fbq('init', '385902050609326');
-    fbq('track', 'PageView');
-    fbq('track', 'GOLDBOTOX!');
-    fbq('track', 'ViewContent');
+    <!-- pixel facebook-->
+    <script>
+        !function(f,b,e,v,n,t,s)
+        {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+        n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+        if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+        n.queue=[];t=b.createElement(e);t.async=!0;
+        t.src=v;s=b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t,s)}(window, document,'script',
+        'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '385902050609326');
+        fbq('track', 'PageView');
+        fbq('track', 'GOLDBOTOX!');
+        fbq('track', 'ViewContent');
     </script>
     <noscript><img height="1" width="1" style="display:none"
     src="https://www.facebook.com/tr?id=385902050609326&ev=PageView&noscript=1"
@@ -29,7 +29,7 @@
     <!-- fim do pixel facebook -->
 
     <style>
-       body {
+        body {
             font-family: 'Poppins', sans-serif;
             margin: 0;
             padding: 0;
@@ -121,19 +121,19 @@
             text-shadow: 1px 2px 2px rgb(0 0 0 / 70%);
             box-shadow: 0 0 0 0 #008a004a;
         }
-            @-webkit-keyframes pulse{0%{
-              -moz-transform:scale(1);
-              -ms-transform:scale(1);
-              -webkit-transform:scale(1);
-              transform:scale(1)}70%{-moz-transform:scale(1);
-              -ms-transform:scale(1);
-              -webkit-transform:scale(1);
-              transform:scale(1);
-              box-shadow:0 0 0 16px rgba(90,153,212,0);
-              }100%{-moz-transform:scale(1);
-              -ms-transform:scale(1);
-              -webkit-transform:scale(1);transform:scale(1);
-              box-shadow:0 0 0 0 rgba(90,153,212,0);}}
+        @-webkit-keyframes pulse{0%{
+          -moz-transform:scale(1);
+          -ms-transform:scale(1);
+          -webkit-transform:scale(1);
+          transform:scale(1)}70%{-moz-transform:scale(1);
+          -ms-transform:scale(1);
+          -webkit-transform:scale(1);
+          transform:scale(1);
+          box-shadow:0 0 0 16px rgba(90,153,212,0);
+          }100%{-moz-transform:scale(1);
+          -ms-transform:scale(1);
+          -webkit-transform:scale(1);transform:scale(1);
+          box-shadow:0 0 0 0 rgba(90,153,212,0);}}
     
         .btn:hover {
             background-color: #008a00;
@@ -495,147 +495,143 @@
                 margin: auto;
             }
         }
-/*baner botão */
-#floating-banner {
-    display: none;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    background-color: #008a00;
-    color: #fff;
-    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.3);
-    padding: 7px 20px;
-    text-align: center;
-    z-index: 1000;
-    border-radius: 10px 10px 0 0;
-    transition: all 0.3s ease-in-out;
-}
+        /*baner botão */
+        #floating-banner {
+            display: none;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            background-color: #008a00;
+            color: #fff;
+            box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.3);
+            padding: 7px 20px;
+            text-align: center;
+            z-index: 1000;
+            border-radius: 10px 10px 0 0;
+            transition: all 0.3s ease-in-out;
+        }
 
-#floating-banner h2 {
-    margin: 7px 0;
-    font-size: 17px;
-    font-weight: 600;
-}
+        #floating-banner h2 {
+            margin: 7px 0;
+            font-size: 17px;
+            font-weight: 600;
+        }
 
-.banner-content {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    flex-wrap: nowrap;
-}
+        .banner-content {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            flex-wrap: nowrap;
+        }
 
-.custom-select-wrapper {
-    position: relative;
-    user-select: none;
-}
+        .custom-select-wrapper {
+            position: relative;
+            user-select: none;
+        }
 
-.custom-select {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-}
+        .custom-select {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+        }
 
-.custom-select-trigger {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 128px;
-    padding: 5px;
-    font-size: 16px;
-    color: #333;
-    background: #fff;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    cursor: pointer;
-}
+        .custom-select-trigger {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 128px;
+            padding: 5px;
+            font-size: 16px;
+            color: #333;
+            background: #fff;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            cursor: pointer;
+        }
 
-.custom-options {
-    position: absolute;
-    display: none;
-    flex-direction: column-reverse; /* This makes the options appear upwards */
-    width: 100%;
-    max-height: 200px;
-    overflow-y: auto;
-    background: #fff;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    top: auto;
-    bottom: 100%;
-}
+        .custom-options {
+            position: absolute;
+            display: none;
+            flex-direction: column-reverse; /* This makes the options appear upwards */
+            width: 100%;
+            max-height: 200px;
+            overflow-y: auto;
+            background: #fff;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            top: auto;
+            bottom: 100%;
+        }
 
-.custom-option {
-    padding: 10px;
-    font-size: 16px;
-    color: #333;
-    cursor: pointer;
-    transition: background 0.3s ease-in-out;
-}
+        .custom-option {
+            padding: 10px;
+            font-size: 16px;
+            color: #333;
+            cursor: pointer;
+            transition: background 0.3s ease-in-out;
+        }
 
-.custom-option:hover,
-.custom-option.selected {
-    background: #f3f3f3;
-}
+        .custom-option:hover,
+        .custom-option.selected {
+            background: #f3f3f3;
+        }
 
-.custom-select.open .custom-options {
-    display: flex;
-}
+        .custom-select.open .custom-options {
+            display: flex;
+        }
 
-.arrow {
-    width: 0;
-    height: 0;
-    border-left: 5px solid transparent;
-    border-right: 5px solid transparent;
-    border-top: 5px solid #333;
-}
+        .arrow {
+            width: 0;
+            height: 0;
+            border-left: 5px solid transparent;
+            border-right: 5px solid transparent;
+            border-top: 5px solid #333;
+        }
 
-#floating-banner button {
-    margin: 10px 5px;
-    padding: 10px 20px;
-    background-color: #ff523b;
-    border: none;
-    border-radius: 5px;
-    color: #fff;
-    font-size: 13px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-    text-shadow: 1px 2px 2px rgb(0 0 0 / 70%);
-    box-shadow: 0 0 0 0 #ff523b;
-}
+        #floating-banner button {
+            margin: 10px 5px;
+            padding: 10px 20px;
+            background-color: #ff523b;
+            border: none;
+            border-radius: 5px;
+            color: #fff;
+            font-size: 13px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            text-shadow: 1px 2px 2px rgb(0 0 0 / 70%);
+            box-shadow: 0 0 0 0 #ff523b;
+        }
 
-@-webkit-keyframes pulse { 
-    0% {
-        -moz-transform: scale(1);
-        -ms-transform: scale(1);
-        -webkit-transform: scale(1);
-        transform: scale(1);
-    }
-    70% {
-        -moz-transform: scale(1);
-        -ms-transform: scale(1);
-        -webkit-transform: scale(1);
-        transform: scale(1);
-        box-shadow: 0 0 0 16px rgba(255, 82, 59, 0);
-    }
-    100% {
-        -moz-transform: scale(1);
-        -ms-transform: scale(1);
-        -webkit-transform: scale(1);
-        transform: scale(1);
-        box-shadow: 0 0 0 0 rgba(255, 82, 59, 0);
-    }
-}
+        @-webkit-keyframes pulse { 
+            0% {
+                -moz-transform: scale(1);
+                -ms-transform: scale(1);
+                -webkit-transform: scale(1);
+                transform: scale(1);
+            }
+            70% {
+                -moz-transform: scale(1);
+                -ms-transform: scale(1);
+                -webkit-transform: scale(1);
+                transform: scale(1);
+                box-shadow: 0 0 0 16px rgba(255, 82, 59, 0);
+            }
+            100% {
+                -moz-transform: scale(1);
+                -ms-transform: scale(1);
+                -webkit-transform: scale(1);
+                transform: scale(1);
+                box-shadow: 0 0 0 0 rgba(255, 82, 59, 0);
+            }
+        }
 
-.pulse {
-    animation: pulse 1.5s infinite;
-}
+        .pulse {
+            animation: pulse 1.5s infinite;
+        }
 
-#floating
-
-/* fim baner botão */
-
-
+        /* fim baner botão */
     </style>
 </head>
 <body>
@@ -681,51 +677,41 @@
                 </div>
             </div>
 
-        <!-- Floating Banner -->
-<div id="floating-banner">
-    <h2>Escolha seu Tamanho e Compre Agora!</h2>
-    <div class="banner-content">
-        <div class="custom-select-wrapper">
-            <div class="custom-select">
-                <div class="custom-select-trigger">
-                    <span>M</span>
-                    <div class="arrow"></div>
-                </div>
-                <div class="custom-options">
-                    <span class="custom-option selected" data-value="link_pp">1 KIT</span>
-                    <span class="custom-option" data-value="link_p">2 KITs</span>
-                    <span class="custom-option" data-value="link_m">3 KITS</span>
-                    <!--span class="custom-option" data-value="link_g">G 75-85Kg</span>
-                    <span class="custom-option" data-value="link_gg">GG 85-95Kg</span>
-                    <span class="custom-option" data-value="link_xg">XG 95-105Kg</span-->
+            <!-- Floating Banner -->
+            <div id="floating-banner">
+                <h2>Escolha seu Tamanho e Compre Agora!</h2>
+                <div class="banner-content">
+                    <div class="custom-select-wrapper">
+                        <div class="custom-select">
+                            <div class="custom-select-trigger">
+                                <span>M</span>
+                                <div class="arrow"></div>
+                            </div>
+                            <div class="custom-options">
+                                <span class="custom-option selected" data-value="link_pp">1 KIT</span>
+                                <span class="custom-option" data-value="link_p">2 KITs</span>
+                                <span class="custom-option" data-value="link_m">3 KITS</span>
+                            </div>
+                        </div>
+                    </div>
+                    <button id="floating-buy-button" class="btn pulse">🛒 COMPRAR AGORA!</button>
                 </div>
             </div>
-        </div>
-        <button id="floating-buy-button" class="btn pulse">🛒 COMPRAR AGORA!</button>
-    </div>
-</div>
-<!-- Fim Floating Banner -->
-
+            <!-- Fim Floating Banner -->
 
             <div class="col-2">
-                <p>Meia Calça</p>
-                <h1>Meia-Calça Peluciada</h1>
-                <h4>R$98,70</h4>
+                <p>GoldBotox</p>
+                <h1>GoldBotox + Spray</h1>
+                <h4 id="product-price">R$98,70</h4> <!-- Linha 713 -->
                 <h3>Tamanho: <span id="selected-size" style="color: #e2391b;">PP 45-55Kg</span></h3>
                 <select id="size-select">
                     <option>Select Size</option>
-                    <option value="link_pp" selected>1 KIT (1 Mês de Tratamento)</option>
-                    <option value="link_p">2 KITS (2 Mês de Tratamento)</option>
-                    <option value="link_m">3 KITS (3 Mês de Tratamento)</option>
-                    <!--option value="link_g">G 75-85Kg</option>
-                    <option value="link_gg">GG 85-95Kg</option>
-                    <option value="link_xg">XG 95-105Kg</option-->
+                    <option value="link_pp" data-price="R$98,80" selected>1 KIT (2 Mês de Tratamento)</option>
+                    <option value="link_p" data-price="R$148,80">2 KITS (4 Mês de Tratamento)</option>
+                    <option value="link_m" data-price="R$198,80">3 KITS (6 Mês de Tratamento)</option>
                 </select>
                 <input type="number" value="1" id="quantity">
                 <button id="buy-button" class="btn pulse">🛒 COMPRAR AGORA!</button>
-                </div>
-                <!--h3>Product Details <i class="fa fa-indent"></i></h3>
-                <p>Give your summer wardrobe a style upgrade with the HRX Men's Active T-shirt. Team it with a pair of shorts for your morning workout or denims for an evening out with the guys.</p -->
             </div>
         </div>
     </main>
@@ -781,12 +767,12 @@
                     <p style="margin: 20px 0 20px;"><b style="color: #0eb059;">✔️ Suporte ao cliente:</b> Atualizamos o andamento do seu pedido via E-mail, em caso de alguma dúvida entre em contato conosco e estaremos prontos para te atender.</p>
                     <p style="margin: 20px 0 20px;"><b style="color: #0eb059;">✔️ Satisfação Garantida:</b> Confiamos tanto em nossa qualidade, que após você adquirir nosso produto e usá-lo por 7 dias, e caso não goste do mesmo ou ele apresentar algum defeito, nós devolveremos 100% do dinheiro!</p>
                     <p style="margin: 20px 0 20px;"><span style="color: #0eb059;"><b>NOSSA GARANTIA &amp; RISCO ZERO</b></span></p>
-                    <p>Cumprimos conforme a legislação brasileira, que o cliente tem até 7 dias para devolução por quaisquer problemas ou insatisfação, a contar do ato de recebimento do produto. Na <b>Inove Descontos</b> concedemos a devolução de 100% do valor do produto.</p>
+                    <p>Cumprimos conforme a legislação brasileira, que o cliente tem até 7 dias para devolução por quaisquer problemas ou insatisfação, a contar do ato de recebimento do produto. Na <b>VestMom</b> concedemos a devolução de 100% do valor do produto.</p>
                     <div class="center">
                         <img src="https://cdn.shopify.com/s/files/1/0278/3327/0361/files/nova_garantia.png?v=1649804460" alt="Garantia" class="image">
                     </div>
                     <div class="center">
-                        <img src="https://cdn.shopify.com/s/files/1/0608/0331/7948/files/SEJAUMREVENDEDORINOVEcortado_1_480x480.png?v=1688916653" alt="Revendedor" class="image">
+                        <img src="images/meia-calsa/comprasegura.avif" alt="Revendedor" class="image">
                     </div>
                 </div>
             </div>
@@ -1027,7 +1013,9 @@
         function updateSelectedSize() {
             const select = document.getElementById('size-select');
             const selectedSizeText = select.options[select.selectedIndex].text;
+            const selectedPrice = select.options[select.selectedIndex].getAttribute('data-price');
             document.getElementById('selected-size').textContent = selectedSizeText;
+            document.getElementById('product-price').textContent = selectedPrice;
         }
 
         // Adicionar um event listener para o select
@@ -1052,152 +1040,152 @@
         buyButton.setAttribute('onclick', `window.location.href='${sizeLinks[sizeSelect.value]}'`);
 
         document.addEventListener('DOMContentLoaded', function () {
-        const floatingBanner = document.getElementById('floating-banner');
-        const customSelect = document.querySelector('.custom-select-wrapper');
-        const customSelectTrigger = document.querySelector('.custom-select-trigger');
-        const customOptions = document.querySelectorAll('.custom-option');
-        const floatingBuyButton = document.getElementById('floating-buy-button');
-        const sizeLinks = {
-            link_pp: 'https://seguro.tresestilo.com/r/JRW7IZDMMV',
-            link_p: 'https://seguro.tresestilo.com/b/1RALT3X277S0',
-            link_m: 'https://seguro.tresestilo.com/b/7B572Z3IFPSS',
-        /*  link_g: 'https://seguro.tresestilo.com/r/D33TRF5FFV',
-            link_gg: 'https://seguro.tresestilo.com/r/SD6WIPEB4I',
-            link_xg: 'https://seguro.tresestilo.com/r/PVC8M5IRE2'  */
-        };
+            const floatingBanner = document.getElementById('floating-banner');
+            const customSelect = document.querySelector('.custom-select-wrapper');
+            const customSelectTrigger = document.querySelector('.custom-select-trigger');
+            const customOptions = document.querySelectorAll('.custom-option');
+            const floatingBuyButton = document.getElementById('floating-buy-button');
+            const sizeLinks = {
+                link_pp: 'https://seguro.tresestilo.com/r/JRW7IZDMMV',
+                link_p: 'https://seguro.tresestilo.com/b/1RALT3X277S0',
+                link_m: 'https://seguro.tresestilo.com/b/7B572Z3IFPSS',
+            /*  link_g: 'https://seguro.tresestilo.com/r/D33TRF5FFV',
+                link_gg: 'https://seguro.tresestilo.com/r/SD6WIPEB4I',
+                link_xg: 'https://seguro.tresestilo.com/r/PVC8M5IRE2'  */
+            };
 
-        function updateBannerSizeLink(value) {
-            floatingBuyButton.setAttribute('onclick', `window.location.href='${sizeLinks[value]}'`);
-        }
+            function updateBannerSizeLink(value) {
+                floatingBuyButton.setAttribute('onclick', `window.location.href='${sizeLinks[value]}'`);
+            }
 
-        customSelectTrigger.addEventListener('click', function () {
-            customSelect.querySelector('.custom-select').classList.toggle('open');
-        });
+            customSelectTrigger.addEventListener('click', function () {
+                customSelect.querySelector('.custom-select').classList.toggle('open');
+            });
 
-        customOptions.forEach(option => {
-            option.addEventListener('click', function () {
-                customSelectTrigger.querySelector('span').textContent = this.textContent;
-                customSelect.querySelector('.custom-option.selected').classList.remove('selected');
-                this.classList.add('selected');
-                customSelect.querySelector('.custom-select').classList.remove('open');
-                updateBannerSizeLink(this.getAttribute('data-value'));
+            customOptions.forEach(option => {
+                option.addEventListener('click', function () {
+                    customSelectTrigger.querySelector('span').textContent = this.textContent;
+                    customSelect.querySelector('.custom-option.selected').classList.remove('selected');
+                    this.classList.add('selected');
+                    customSelect.querySelector('.custom-select').classList.remove('open');
+                    updateBannerSizeLink(this.getAttribute('data-value'));
+                });
+            });
+
+            window.addEventListener('scroll', function () {
+                const scrollPosition = window.scrollY || window.pageYOffset;
+                const triggerPosition = document.body.offsetHeight * 0.06;
+
+                if (scrollPosition >= triggerPosition) {
+                    floatingBanner.style.display = 'block';
+                } else {
+                    floatingBanner.style.display = 'none';
+                }
+            });
+
+            // Adicionar o valor inicial ao carregamento
+            const initialOption = document.querySelector('.custom-option.selected');
+            customSelectTrigger.querySelector('span').textContent = initialOption.textContent;
+            updateBannerSizeLink(initialOption.getAttribute('data-value'));
+
+            window.addEventListener('click', function (e) {
+                if (!customSelect.contains(e.target)) {
+                    customSelect.querySelector('.custom-select').classList.remove('open');
+                }
             });
         });
-
-        window.addEventListener('scroll', function () {
-            const scrollPosition = window.scrollY || window.pageYOffset;
-            const triggerPosition = document.body.offsetHeight * 0.06;
-
-            if (scrollPosition >= triggerPosition) {
-                floatingBanner.style.display = 'block';
-            } else {
-                floatingBanner.style.display = 'none';
-            }
-        });
-
-        // Adicionar o valor inicial ao carregamento
-        const initialOption = document.querySelector('.custom-option.selected');
-        customSelectTrigger.querySelector('span').textContent = initialOption.textContent;
-        updateBannerSizeLink(initialOption.getAttribute('data-value'));
-
-        window.addEventListener('click', function (e) {
-            if (!customSelect.contains(e.target)) {
-                customSelect.querySelector('.custom-select').classList.remove('open');
-            }
-        });
-    });
     </script>
 
-<script
-async
-src="https://www.googletagmanager.com/gtag/js?id=G-1DFMKE452Y"
-></script>
-<script>
-window.dataLayer = window.dataLayer || []
-function gtag() {
-  dataLayer.push(arguments)
-}
-gtag('js', new Date())
+    <script
+    async
+    src="https://www.googletagmanager.com/gtag/js?id=G-1DFMKE452Y"
+    ></script>
+    <script>
+    window.dataLayer = window.dataLayer || []
+    function gtag() {
+      dataLayer.push(arguments)
+    }
+    gtag('js', new Date())
 
-gtag('config', 'G-1DFMKE452Y')
-</script>
+    gtag('config', 'G-1DFMKE452Y')
+    </script>
 
-<!-- Code injected by live-server -->
-<script>
-	// <![CDATA[  <-- For SVG support
-	if ('WebSocket' in window) {
-		(function () {
-			function refreshCSS() {
-				var sheets = [].slice.call(document.getElementsByTagName("link"));
-				var head = document.getElementsByTagName("head")[0];
-				for (var i = 0; i < sheets.length; ++i) {
-					var elem = sheets[i];
-					var parent = elem.parentElement || head;
-					parent.removeChild(elem);
-					var rel = elem.rel;
-					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
-						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
-						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
-					}
-					parent.appendChild(elem);
-				}
-			}
-			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
-			var address = protocol + window.location.host + window.location.pathname + '/ws';
-			var socket = new WebSocket(address);
-			socket.onmessage = function (msg) {
-				if (msg.data == 'reload') window.location.reload();
-				else if (msg.data == 'refreshcss') refreshCSS();
-			};
-			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
-				console.log('Live reload enabled.');
-				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
-			}
-		})();
-	}
-	else {
-		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
-	}
-	// ]]>
-</script>
-<!-- Code injected by live-server -->
-<script>
-	// <![CDATA[  <-- For SVG support
-	if ('WebSocket' in window) {
-		(function () {
-			function refreshCSS() {
-				var sheets = [].slice.call(document.getElementsByTagName("link"));
-				var head = document.getElementsByTagName("head")[0];
-				for (var i = 0; i < sheets.length; ++i) {
-					var elem = sheets[i];
-					var parent = elem.parentElement || head;
-					parent.removeChild(elem);
-					var rel = elem.rel;
-					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
-						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
-						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
-					}
-					parent.appendChild(elem);
-				}
-			}
-			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
-			var address = protocol + window.location.host + window.location.pathname + '/ws';
-			var socket = new WebSocket(address);
-			socket.onmessage = function (msg) {
-				if (msg.data == 'reload') window.location.reload();
-				else if (msg.data == 'refreshcss') refreshCSS();
-			};
-			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
-				console.log('Live reload enabled.');
-				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
-			}
-		})();
-	}
-	else {
-		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
-	}
-	// ]]>
-</script>
+    <!-- Code injected by live-server -->
+    <script>
+        // <![CDATA[  <-- For SVG support
+        if ('WebSocket' in window) {
+            (function () {
+                function refreshCSS() {
+                    var sheets = [].slice.call(document.getElementsByTagName("link"));
+                    var head = document.getElementsByTagName("head")[0];
+                    for (var i = 0; i < sheets.length; ++i) {
+                        var elem = sheets[i];
+                        var parent = elem.parentElement || head;
+                        parent.removeChild(elem);
+                        var rel = elem.rel;
+                        if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+                            var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+                            elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+                        }
+                        parent.appendChild(elem);
+                    }
+                }
+                var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+                var address = protocol + window.location.host + window.location.pathname + '/ws';
+                var socket = new WebSocket(address);
+                socket.onmessage = function (msg) {
+                    if (msg.data == 'reload') window.location.reload();
+                    else if (msg.data == 'refreshcss') refreshCSS();
+                };
+                if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+                    console.log('Live reload enabled.');
+                    sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+                }
+            })();
+        }
+        else {
+            console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+        }
+        // ]]>
+    </script>
+    <!-- Code injected by live-server -->
+    <script>
+        // <![CDATA[  <-- For SVG support
+        if ('WebSocket' in window) {
+            (function () {
+                function refreshCSS() {
+                    var sheets = [].slice.call(document.getElementsByTagName("link"));
+                    var head = document.getElementsByTagName("head")[0];
+                    for (var i = 0; i < sheets.length; ++i) {
+                        var elem = sheets[i];
+                        var parent = elem.parentElement || head;
+                        parent.removeChild(elem);
+                        var rel = elem.rel;
+                        if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+                            var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+                            elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+                        }
+                        parent.appendChild(elem);
+                    }
+                }
+                var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+                var address = protocol + window.location.host + window.location.pathname + '/ws';
+                var socket = new WebSocket(address);
+                socket.onmessage = function (msg) {
+                    if (msg.data == 'reload') window.location.reload();
+                    else if (msg.data == 'refreshcss') refreshCSS();
+                };
+                if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+                    console.log('Live reload enabled.');
+                    sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+                }
+            })();
+        }
+        else {
+            console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+        }
+        // ]]>
+    </script>
 </body>
 </html>
 
@@ -1232,7 +1220,6 @@ gtag('config', 'G-1DFMKE452Y')
       margin-top: 15px;
     }
 
-    
   </style>
 </head>
 <body>
@@ -1251,4 +1238,5 @@ gtag('config', 'G-1DFMKE452Y')
       }
     });
   </script>
-<!-- Code injected b-->
+</body>
+</html>
